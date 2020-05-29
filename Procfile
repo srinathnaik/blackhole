@@ -1,1 +1,1 @@
-web: gunicorn wsgi:electron
+web: gunicorn electron:app

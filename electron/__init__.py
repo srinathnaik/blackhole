@@ -2,7 +2,7 @@
 
 from flask import Flask, render_template
 import json
-import strings
+import electron.strings as strings
 import os
 
 # create and configure the app
