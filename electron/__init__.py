@@ -12,13 +12,13 @@ app.config.from_pyfile('config.py', silent=True)
 
 
 # a simple page that says hello
-@app.route('/hello')
-def hello():
-    return 'Hello, World!'
+@app.route('/programming')
+def programming():
+    return render_template('programming.html')
 
 """" entry point for webapp """
 @app.route("/")
-def main():
+def home():
     return render_template('index.html', topics=strings.library, my=strings.personal_data)
 
 

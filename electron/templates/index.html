@@ -9,8 +9,26 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 
 <body>
+
+<header>
+  <div class="w3-content" style="max-width:1400px;">
+    <table class="s3-table">
+      <tr class="s3-card s3-full">
+            <div class="btn-group navigation-buttons">
+              <button>
+                <a href="{{ url_for('programming') }}">Programming</a>
+              </button>
+              <button>
+                <a href="{{ url_for('home') }}">Home</a>
+              </button>
+            </div>
+        </tr>
+    </table>
+  </div>
+</header>
+
 <!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<div class="w3-content" style="max-width:1400px;">
 
   <div class="s3-row-padding">
     <!-- The Grid -->
@@ -56,7 +74,7 @@
                 <h5 class="quote-author">- The Bhagavad Geeta</h5>
               </div>
 
-              <h2><b>Some useful material</b></h2>
+              <h2 class="heading"><b>Some useful material</b></h2>
               {% set N=topics|length %}
 
               <div class="row">
